@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indic Language Support in Retail Commerce</title>
+  <!-- Add your stylesheets and libraries here -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Add additional dependencies as needed -->
+</head>
+<body>
+  <header>
+    <h1>Indic Language Commerce</h1>
+  </header>
+  <main>
+    <!-- Input Interface -->
+    <section id="input-section">
+      <h2>Input Interface</h2>
+      <textarea id="textInput" placeholder="Enter text in Indic language"></textarea>
+      <button onclick="translateText()">Translate</button>
+
+      <input type="file" id="imageInput" accept="image/*" onchange="processImage()">
+      <button onclick="translateImage()">Translate Image</button>
+
+      <!-- Voice input can be implemented using a library like Web Speech API -->
+      <!-- Ensure you include necessary dependencies -->
+      <button onclick="startVoiceRecognition()">Start Voice Recognition</button>
+    </section>
+
+    <!-- Translation Engine -->
+    <section id="translation-section">
+      <h2>Translation Output</h2>
+      <div id="output"></div>
+    </section>
+
+    <!-- Output Interface -->
+    <section id="output-section">
+      <h2>Output Interface</h2>
+      <div id="translatedText"></div>
+      <button onclick="speakTranslatedText()">Speak</button>
+
+      <!-- Displaying images in the output -->
+      <img id="translatedImage" alt="Translated Image">
+
+      <!-- You may implement other UI elements for specific e-commerce flows -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Indic Language Commerce</p>
+  </footer>
+
+  <!-- Add your scripts and libraries here -->
+  <script src="script.js"></script>
+  <!-- Add additional dependencies as needed -->
+</body>
+</html>
